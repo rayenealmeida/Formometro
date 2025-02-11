@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import { useDisciplina } from './components/DisciplinaContext';
+import { useDisciplina } from '../contexts/DisciplinaContext';  // Ajuste a importação conforme necessário
 
 const DisciplinaForm = () => {
-    const { addDisciplina} = useDisciplina();
+  const { addDisciplina } = useDisciplina(); // Garantir que addDisciplina esteja vindo corretamente
+
   // Estado para armazenar os dados do formulário
   const [disciplina, setDisciplina] = useState({
     code: '',
@@ -24,10 +25,9 @@ const DisciplinaForm = () => {
   // Função para submeter o formulário
   const handleSubmit = (e) => {
     e.preventDefault();
-    addDisciplina(disciplina);
-    console.log(disciplina); // enviar os dados para uma API ou contexto
+    addDisciplina(disciplina); // Certifique-se de que addDisciplina esteja disponível no contexto
 
-    // Limpar os campos 
+    // Limpar os campos após envio
     setDisciplina({
       code: '',
       name: '',

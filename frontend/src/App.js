@@ -1,7 +1,7 @@
 import React from 'react';
 import DisciplinaForm from './components/DisciplinaForm';
 import DisciplinaLista from './components/DisciplinaLista';
-import { DisciplinaProvider } from './contexts/DisciplinaContext';
+import { DisciplinaProvider } from './contexts/DisciplinaContext';  // Corrigido
 
 const App = () => {
   return (
