@@ -56,8 +56,9 @@ npm run dev
 ```
 
 ## 🤝 Contribuindo
-Toda contribuição é bem-vinda
+Toda contribuição é bem-vinda! 
 
+[Quero contribuir](https://github.com/rayenealmeida/Formometro/blob/main/CONTRIBUTING.md)
 
 ## 📝 Licença 
 
