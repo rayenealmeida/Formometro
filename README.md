@@ -18,7 +18,7 @@ O Formômetro tem como principal objetivo fornecer uma ferramenta para que os al
 ### Backend (Python)
 
 1. Clone o repositório
-2. 
+
 ```
 git clone https://github.com/rayenealmeida/Formometro.git
 cd Formometro/backend
