@@ -15,7 +15,7 @@ O Formômetro tem como principal objetivo fornecer uma ferramenta para que os al
 
 ## 🚀 Como rodar o projeto
 
-### Backend (Python)
+### Backend 
 
 1. Clone o repositório
 
@@ -34,5 +34,31 @@ source venv/bin/activate  # No Windows use `venv\Scripts\activate`
 ```
 pip install -r requirements.txt
 ```
+### Frontend 
+
+1. Acesse a pasta frontend
+
+```
+cd ../frontend
+```
+
+2. Instale as dependências
+
+```
+npm install
+
+```
+
+ 3. Rode o projeto
+
+```
+npm run dev
+```
+
+## 🤝 Contribuindo
+Toda contribuição é bem-vinda
 
 
+## 📝 Licença 
+
+The [MIT License](https://github.com/rayenealmeida/Formometro?tab=MIT-1-ov-file) (MIT)
