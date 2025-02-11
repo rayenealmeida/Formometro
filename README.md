@@ -17,18 +17,22 @@ O Formômetro tem como principal objetivo fornecer uma ferramenta para que os al
 
 ### Backend (Python)
 
-```sh
-# Clone o repositório
+1. Clone o repositório
+2. 
+```
 git clone https://github.com/rayenealmeida/Formometro.git
 cd Formometro/backend
+```
+2. Crie um ambiente virtual e ative
 
-# Crie um ambiente virtual e ative
+```
 python -m venv venv
 source venv/bin/activate  # No Windows use `venv\Scripts\activate`
+```
 
-# Instale as dependências
+3. Instale as dependências
+```
 pip install -r requirements.txt
+```
 
-# Rode o servidor
-python manage.py runserver  # Django
-uvicorn main:app --reload  # FastAPI (se for o caso)
+
