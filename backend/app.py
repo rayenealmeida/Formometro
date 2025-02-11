@@ -20,15 +20,19 @@ migrate = Migrate(app, db)
 
 # Importando os modelos após a criação do db
 from models.usuario import Usuario
+from models.disciplina import Disciplina
+
+# Importando as rotas
+from routes.disciplinas import disciplinas_bp
+from routes.usuarios import usuarios_bp
+
+# Registrando as rotas
+app.register_blueprint(disciplinas_bp, url_prefix='/api')
+app.register_blueprint(usuarios_bp, url_prefix='/api')
 
 @app.route('/')
 def home():
     return jsonify({"message": "Formômetro API está rodando!"})
-
-@app.route('/usuarios', methods=['GET'])
-def get_usuarios():
-    usuarios = Usuario.query.all()
-    return jsonify([usuario.nome for usuario in usuarios])
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000)

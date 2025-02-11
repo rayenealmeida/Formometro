@@ -1,4 +1,3 @@
-# models/usuario.py
 from app import db  
 
 class Usuario(db.Model):
