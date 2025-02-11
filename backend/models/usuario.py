@@ -1,5 +1,5 @@
 # models/usuario.py
-from app import db
+from app import db  
 
 class Usuario(db.Model):
     id = db.Column(db.Integer, primary_key=True)
